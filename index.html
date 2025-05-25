@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>2 Karten mit schwarzem Hintergrund</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    .wrapper {
+      width: 800px;
+      height: 480px;
+      display: flex;
+      gap: 20px;
+      box-sizing: border-box;
+      padding: 20px;
+    }
+
+    .card {
+      flex: 1;
+      background-color: #000;
+      border: 2px solid #000;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      box-sizing: border-box;
+      color: #fff;
+    }
+
+    .card-title {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    .box {
+      background-color: #fff;
+      color: #000;
+      border: 1px solid #000;
+      border-radius: 8px;
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    /* Letzte Box ohne unteren Abstand */
+    .box:last-child {
+      margin-bottom: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Linke Karte -->
+    <div class="card">
+      <div class="card-title">Boxen</div>
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+      <div class="box">Box 4</div>
+      <div class="box">Box 5</div>
+      <div class="box">Box 6</div>
+    </div>
+
+    <!-- Rechte Karte -->
+    <div class="card">
+      <div class="card-title">BoxenA</div>
+      <div class="box">Box 1A</div>
+      <div class="box">Box 2A</div>
+      <div class="box">Box 3A</div>
+      <div class="box">Box 4A</div>
+      <div class="box">Box 5A</div>
+      <div class="box">Box 6A</div>
+    </div>
+  </div>
+</body>
+</html>
